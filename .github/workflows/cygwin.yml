@@ -175,7 +175,7 @@ jobs:
         shell: bash.exe -eo pipefail -o igncr "{0}"
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          python -m pip install kiwisolver 'numpy>=1.22,<1.26' pillow importlib_resources
+          python -m pip install kiwisolver 'numpy>=1.22,<1.26' pillow pillow-avif-plugin importlib_resources
           grep -v -F -e psutil requirements/testing/all.txt >requirements_test.txt
           python -m pip install meson-python pybind11
           export PATH="/usr/local/bin:$PATH"

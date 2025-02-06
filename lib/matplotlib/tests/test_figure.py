@@ -9,6 +9,7 @@ import warnings
 
 import numpy as np
 import pytest
+import pillow_avif
 from PIL import Image
 
 import matplotlib as mpl
@@ -1705,7 +1706,7 @@ def test_savefig_metadata(fmt):
     Figure().savefig(io.BytesIO(), format=fmt, metadata={})
 
 
-@pytest.mark.parametrize('fmt', ['jpeg', 'jpg', 'tif', 'tiff', 'webp', "raw", "rgba"])
+@pytest.mark.parametrize('fmt', ['jpeg', 'jpg', 'tif', 'tiff', 'webp', 'avif', "raw", "rgba"])
 def test_savefig_metadata_error(fmt):
     with pytest.raises(ValueError, match="metadata not supported"):
         Figure().savefig(io.BytesIO(), format=fmt, metadata={})

@@ -10,6 +10,7 @@ from pathlib import Path
 import warnings
 
 import numpy as np
+import pillow_avif
 import PIL.Image
 import PIL.PngImagePlugin
 

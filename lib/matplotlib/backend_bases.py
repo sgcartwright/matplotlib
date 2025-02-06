@@ -61,6 +61,7 @@ from matplotlib._enums import JoinStyle, CapStyle
 
 _log = logging.getLogger(__name__)
 _default_filetypes = {
+    'avif': 'AVIF Image Format',
     'eps': 'Encapsulated Postscript',
     'gif': 'Graphics Interchange Format',
     'jpg': 'Joint Photographic Experts Group',
@@ -78,6 +79,7 @@ _default_filetypes = {
     'webp': 'WebP Image Format',
 }
 _default_backends = {
+    'avif': 'matplotlib.backends.backend_agg',
     'eps': 'matplotlib.backends.backend_ps',
     'gif': 'matplotlib.backends.backend_agg',
     'jpg': 'matplotlib.backends.backend_agg',

@@ -20,6 +20,7 @@ dependencies:
   - meson-python>=0.13.1
   - numpy<2.1
   - pillow>=9
+  - pillow-avif-plugin
   - pkg-config
   - pygobject
   - pyparsing>=2.3.1
